@@ -21,3 +21,6 @@ def reverse_each_word(string)
   
   return_array.join(" ") # Convert back into string for display
 end
+
+puts reverse_each_word("Hello there, and how are you?")
+puts "Should return: 'olleH ,ereht dna woh era ?uoy'"
