@@ -15,13 +15,11 @@ end
 # Reverses all words in a string using collect
 def reverse_each_word(string)
   string_array = string.split # Convert string to array for iteration
-  return_string = "" # Set container string
 
   # Reverse each word and place into new array
   string_array.collect! { |word| word.reverse }
   
-  string_array.join(" ")
-  
+  string_array.join(" ") # Convert back into string for display
 end
 
 puts reverse_each_word("Hello there, and how are you?")
