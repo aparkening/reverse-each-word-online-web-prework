@@ -18,7 +18,9 @@ def reverse_each_word(string)
   return_string = "" # Set container string
 
   # Reverse each word and place into new array
-  string_array.collect { |word| return_string << word.reverse }
+  string_array.collect { |word| word.reverse }
+  
+  string_array.join(" ")
   
 end
 
